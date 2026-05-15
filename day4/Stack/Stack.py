@@ -1,11 +1,15 @@
 import sys
 class Stack:
-    def __init__(self):
+    def __init__(self,size):
         self.myStack=[]
+        self.size=size
     
     def push(self,value):
-        self.myStack.append(value)
-        print('Element is pushed')
+        if self.isFull():
+             print('Stack is Full')
+        else:
+            self.myStack.append(value)
+            print('Element is pushed')
 
     def display(self):
         print(self.myStack)
@@ -33,8 +37,15 @@ class Stack:
     def deleteStack(self):
         self.myStack = None
 
-    
-obj=Stack()
+    def isFull(self):
+        if len(self.myStack) == self.size:
+            return True
+        else:
+            return False 
+         
+
+size=int(input('Enter size of Stack: '))
+obj=Stack(size)
 print('Stack has created.')
 while True:
     print('1. Push Operation')
