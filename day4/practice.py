@@ -24,17 +24,24 @@
 # print(basicSalary+HRA+TA+DA)
 
 
-input=[5,7,8,3,7,8,9,2,3]
-dic={}
+# input=[5,7,8,3,7,8,9,2,3]
+# dic={}
+# for ele in input:
+#     if ele not in dic:
+#         dic[ele]=0
+#     dic[ele]+=1
+# print(dic)
+# mylist=[]
+# for ele in dic:
+#     if dic[ele]>1 :
+#         mylist.append(ele)
+# print(len(mylist))
 
+
+input=[5,7,2,3,7,8,2,3,3]
+target=3
+count=0
 for ele in input:
-    if ele not in dic:
-        dic[ele]=0
-    dic[ele]+=1
-print(dic)
-mylist=[]
-for ele in dic:
-    if dic[ele]>1 :
-        mylist.append(ele)
-
-print(len(mylist))
+    if target == ele:
+        count+=1
+print(count)

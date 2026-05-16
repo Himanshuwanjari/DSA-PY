@@ -35,7 +35,8 @@ class Stack:
             print('Peek element is ',self.myStack[len(self.myStack)-1])
 
     def deleteStack(self):
-        self.myStack = None
+        self.myStack = []
+        print('Stack has deleted')
 
     def isFull(self):
         if len(self.myStack) == self.size:
