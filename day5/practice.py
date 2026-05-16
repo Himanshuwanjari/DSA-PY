@@ -85,14 +85,100 @@
 
 # Write a program to access each charactor to string in forward and 
 # backward direction by using while loop?
-input='Learning Python is very easy'
-i=0
-while i<len(input):
-    print(input[i],end=' ')
-    i+=1
-print()
-print('Backword')
-j=len(input)-1
-while j>=0:
-    print(input[j],end=' ')
-    j-=1
+# input='Learning Python is very easy'
+# i=0
+# while i<len(input):
+#     print(input[i],end=' ')
+#     i+=1
+# print()
+# print('Backword Direction')
+
+# j=-1
+# while j>=-len(input):
+#     print(input[j],end=' ')
+#     j-=1
+
+# ----------------------------------------------------
+# str='abcdfjgerj abcdfjger'
+# lis=str.split(' ')
+# str1=str[0]
+# str2=str[1]
+# l=len(str1)
+# m=len(str2)
+# i=0
+# while l>=m:
+#     if str1[i] != str2[i]:
+#         print(str1[i])
+#         i+=1
+# if i != l-1:
+#     print(str1)
+# -----------------------------------------------------
+
+
+# v=['a', 'e', 'i', 'o', 'u']
+# w=input('Enter the word where we will search the vowels: ')
+# found=[]
+# for i in w:
+#     if i in v:
+#         if i not in found:
+#             found.append(i)
+# print('Found vowels=',found)
+# print('Unique vowels',len(found),'from the give word =',w)
+
+
+
+# x,y,z=map(int,input().split())
+# myList=[29,38,12,48,39,55]
+# for ele in myList:
+#     if  ele >= y and ele <= z :
+#         print(ele,end=' ')
+
+
+# import datetime
+# date=datetime.datetime.now()
+# print('It\'s now: {:%d/%m/%Y %H:%M:%S}'.format(date))
+
+
+# val=[2**i for i in range(1,6)]
+# print(val)#[2, 4, 8, 16, 32]
+
+
+# val=[i*i for i in range(1,11)]
+# print(val)#[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+
+# squares={x:x*x for x in range(1,6)}
+# print(squares)
+
+
+# doubles={x:2*x for x in range(1,6)}
+# print(doubles)
+
+
+# a,b=[int(x) for x in input('Enter 2 numbers: ').split()]
+# print('Product is :',a*b)
+
+
+# a,b,c=[float(x) for x in input('Enter 3 float numbers :').split()]
+# print('The Sum is :',a+b+c)
+
+
+# myCard=[10,20,800,60,70]
+# for item in myCard:
+#     if item > 400:
+#         print('This is not in my budget')
+#         continue
+#     print(item)
+# else:
+#     print('You have purchased everything.')
+
+
+username='admin'
+password='admin'
+
+while True:
+    name=input('Enter user name: ')
+    passw=input('Enter user password: ')
+    if name==username and passw==password :
+        print('login successfully')
+        break
