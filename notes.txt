@@ -1,0 +1,4 @@
+Python set(): Check if len(set(your_string)) == 1. Since a set only stores unique values, a string with one unique character will result in a set of length one.
+
+recursion--------> when the main problem can be divided into in similar sub problem, then we use recursion
+ it's use the stack memory
